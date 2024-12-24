@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Cart and Notifications</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1b1b2f; /* Match the image's background */
+            color: white;
+        }
+        .navbar {
+            background-color: #14141f; /* Dark navbar background */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; /* White text for links */
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #5a8fff !important; /* Blue hover effect */
+        }
+        .nav-item .dropdown-menu {
+            background-color: #252540; /* Dropdown background */
+            border: none;
+        }
+        .dropdown-item {
+            color: #fff; /* Dropdown text color */
+        }
+        .dropdown-item:hover {
+            background-color: #5a8fff; /* Hover effect for dropdown items */
+            color: white;
+        }
+        .icon-button {
+            color: #fff;
+            position: relative;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        .icon-button:hover {
+            color: #5a8fff;
+        }
+        .icon-button .badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: red;
+            color: white;
+            font-size: 0.75rem;
+            border-radius: 50%;
+            padding: 2px 6px;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .user-info span {
+            margin-right: 1rem;
+            color: #fff;
+        }
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Market</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Database</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <!-- Cart Icon -->
+                    <div class="icon-button">
+                        <i class="bi bi-cart"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <!-- Notifications Icon -->
+                    <div class="icon-button">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge">5</span>
+                    </div>
+                    <!-- User Info -->
+                    <div class="user-info">
+                        <span>5.44 €</span>
+                        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>
